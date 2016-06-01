@@ -1,0 +1,79 @@
+/*
+ *  Node One-pager component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-onepager {
+  div.col-sm-12 {
+    width: 100%;
+
+    .field-name-title {
+      h2 {
+        font-family: @pxl-text-font-bold;
+        font-size: @resp-font-size-large-min;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: @text-color;
+
+        @media @narrow {
+          font-size: @resp-font-size-large;
+        }
+        @media @tablet {
+          font-size: @resp-font-size-large-max;
+        }
+      }
+    }
+
+    .field-name-field-logo {
+      margin: 100px auto 0;
+
+      .field-item {
+        img {
+          margin: 0 auto;
+          width: 70%;
+          height: auto;
+        }
+      }
+    }
+
+    .field-name-field-images {
+      margin: 35% auto 0;
+
+      .field-item {
+        &.odd {
+          margin: 4% auto 0;
+        }
+
+        img {
+          margin: 0 auto;
+          width: 43%;
+          min-width: 200px;
+          height: auto;
+        }
+      }
+    }
+
+    .field-name-field-address {
+      margin: 15% auto;
+
+      .field-item {
+        img {
+          margin: 0 auto;
+          width: 20%;
+          min-width: 150px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
